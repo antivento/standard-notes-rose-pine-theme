@@ -1,52 +1,17 @@
 :root {
-    /* PALETTE ROSÉ PINE MOON */
-    --rp-base: #232136;
-    --rp-surface: #2a273f;
-    --rp-overlay: #393552;
-    --rp-muted: #908caa;
-    --rp-subtle: #908caa;
-    --rp-text: #e0def4;
-    --rp-love: #eb6f92;
-    --rp-gold: #f6c177;
-    --rp-rose: #ea9a97;
-    --rp-pine: #3e8fb0;
-    --rp-foam: #9ccfd8;
-    --rp-iris: #c4a7e7;
-    --rp-highlight-low: #2a283e;
-    --rp-highlight-med: #44415a;
-    --rp-highlight-high: #56526e;
-    --sn-stylekit-background-color: var(--rp-base);
-    --sn-stylekit-foreground-color: var(--rp-text);
-    --sn-stylekit-contrast-background-color: var(--rp-surface);
-    --sn-stylekit-contrast-foreground-color: var(--rp-muted);
-    --sn-stylekit-editor-background-color: var(--rp-base);
-    --sn-stylekit-editor-foreground-color: var(--rp-text);
-    --sn-stylekit-accent-color: var(--rp-iris);
-    --sn-stylekit-accent-color-contrast: var(--rp-base);
-    --sn-stylekit-border-color: var(--rp-highlight-med);
-    --sn-stylekit-input-border-color: var(--rp-highlight-med);
-    --sn-stylekit-input-placeholder-color: var(--rp-muted);
-    --sn-stylekit-background-color-highlight: var(--rp-overlay);
-    --sn-stylekit-foreground-color-highlight: var(--rp-text);
-    --sn-stylekit-scrollbar-track-color: transparent;
-    --sn-stylekit-scrollbar-thumb-color: var(--rp-highlight-med);
+    --sn-stylekit-background-color: #232136;
+    --sn-stylekit-foreground-color: #e0def4;
+    --sn-stylekit-border-color: #44415a;
+    --sn-stylekit-editor-background-color: #232136;
+    --sn-stylekit-editor-foreground-color: #e0def4;
+    /* Variabili extra per sicurezza */
+    --sn-stylekit-contrast-background-color: #2a273f;
+    --sn-stylekit-contrast-foreground-color: #e0def4;
+    --sn-stylekit-neutral-color: #908caa;
 }
 
-/* Applica il font a tutto */
-body, .app, .editor, textarea, input, .CodeMirror {
-    font-family: var(--sn-stylekit-font-family) !important;
-}
-
-/* Stile Tag */
-.tag {
-    background-color: var(--rp-overlay) !important;
-    color: var(--rp-rose) !important;
-    border: 1px solid var(--rp-highlight-med) !important;
-    border-radius: 4px;
-}
-
-/* Selezione del testo */
-::selection {
-    background-color: var(--rp-highlight-high);
-    color: var(--rp-text);
+/* Forziamo il colore di sfondo per essere sicuri che il tema sia caricato */
+body, .app, .dn {
+    background-color: #232136 !important;
+    color: #e0def4 !important;
 }
