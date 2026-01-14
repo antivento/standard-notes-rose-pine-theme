@@ -1,17 +1,6 @@
 :root {
-    --sn-stylekit-background-color: #232136;
-    --sn-stylekit-foreground-color: #e0def4;
-    --sn-stylekit-border-color: #44415a;
-    --sn-stylekit-editor-background-color: #232136;
-    --sn-stylekit-editor-foreground-color: #e0def4;
-    /* Variabili extra per sicurezza */
-    --sn-stylekit-contrast-background-color: #2a273f;
-    --sn-stylekit-contrast-foreground-color: #e0def4;
-    --sn-stylekit-neutral-color: #908caa;
+    --sn-stylekit-background-color: #ff0000 !important;
+    --sn-stylekit-editor-background-color: #ff0000 !important;
+    --sn-stylekit-foreground-color: #ffffff !important;
 }
-
-/* Forziamo il colore di sfondo per essere sicuri che il tema sia caricato */
-body, .app, .dn {
-    background-color: #232136 !important;
-    color: #e0def4 !important;
-}
+body, .app { background-color: #ff0000 !important; }
