@@ -1,17 +1,9 @@
 {
-  "identifier": "com.antivento.rose-pine-moon-v3",
-  "name": "Rosé Pine Moon V3",
+  "identifier": "com.antivento.rose-pine-moon-v5",
+  "name": "Rosé Pine Moon V5",
   "content_type": "SN|Theme",
   "area": "themes",
-  "version": "3.0",
-  "description": "Rosé Pine Moon Theme (GitHub Pages)",
-  "url": "https://antivento.github.io/standard-notes-rose-pine-theme/theme.css",
-  "download_url": "https://github.com/antivento/standard-notes-rose-pine-theme/archive/refs/heads/main.zip",
-  "latest_url": "https://antivento.github.io/standard-notes-rose-pine-theme/ext.json",
-  "dock_icon": {
-    "type": "circle",
-    "background_color": "#c4a7e7",
-    "foreground_color": "#232136",
-    "border_color": "#c4a7e7"
-  }
+  "version": "5.0.0",
+  "description": "Rosé Pine Moon Theme",
+  "url": "https://antivento.github.io/standard-notes-rose-pine-theme/theme.css"
 }
