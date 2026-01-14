@@ -3,13 +3,6 @@
    FONT: Inter Variable (Self-Hosted)
    ======================================================= */
 
-@font-face {
-    font-family: 'Inter';
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/antivento/standard-notes-rose-pine-theme@main/inter-var.woff2') format('woff2-variations');
-}
 
 :root {
     /* PALETTE ROSÉ PINE MOON */
