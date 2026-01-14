@@ -1,9 +1,10 @@
 {
-  "identifier": "com.antivento.rose-pine-moon-reboot",
-  "name": "Rosé Pine Moon Reboot",
+  "identifier": "com.antivento.rose-pine-offline",
+  "name": "Rosé Pine Offline",
   "content_type": "SN|Theme",
   "area": "themes",
-  "version": "9.0.0",
-  "description": "Tema Rosé Pine Moon",
-  "url": "https://antivento.github.io/standard-notes-rose-pine-theme/theme.css?nocache=123"
+  "version": "1.0.0",
+  "description": "Tema Locale",
+  "url": "theme.css",
+  "download_url": "https://github.com/antivento/standard-notes-rose-pine-theme/archive/refs/heads/main.zip"
 }
