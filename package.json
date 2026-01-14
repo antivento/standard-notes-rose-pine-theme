@@ -1,0 +1,9 @@
+{
+  "identifier": "com.antivento.rose-pine-moon",
+  "name": "Rosé Pine Moon",
+  "content_type": "SN|Theme",
+  "area": "themes",
+  "version": "1.0.0",
+  "description": "Rosé Pine Moon custom theme with slef-hsoted Inter font",
+  "url": "https://raw.githubusercontent.com/antivento/standard-notes-rose-pine-theme/main/theme.css"
+}
