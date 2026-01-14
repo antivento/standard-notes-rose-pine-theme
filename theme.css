@@ -1,14 +1,2 @@
-/* RESET TOTALE */
-:root {
-    --sn-stylekit-background-color: #ff0000 !important;
-    --sn-stylekit-editor-background-color: #ff0000 !important;
-    --sn-stylekit-foreground-color: #ffffff !important;
-    --sn-stylekit-border-color: #ffffff !important;
-    --sn-stylekit-paragraph-text-color: #ffffff !important;
-}
-
-/* Forzatura bruta per layout vecchi/nuovi */
-html, body, .app, .sn-component, #app-container {
-    background-color: #ff0000 !important;
-    color: white !important;
-}
+:root { --sn-stylekit-background-color: #ff0000 !important; }
+body, .app { background-color: #ff0000 !important; }
