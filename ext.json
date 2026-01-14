@@ -1,9 +1,9 @@
 {
-  "identifier": "com.antivento.rose-pine-moon-v7",
-  "name": "Rosé Pine Moon 7",
+  "identifier": "com.antivento.rose-pine-moon-v8",
+  "name": "Rosé Pine Moon",
   "content_type": "SN|Theme",
   "area": "themes",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "description": "Rosé Pine Moon Theme",
   "url": "https://antivento.github.io/standard-notes-rose-pine-theme/theme.css?v=testRosso"
 }
