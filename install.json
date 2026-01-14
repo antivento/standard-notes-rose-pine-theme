@@ -4,6 +4,7 @@
   "content_type": "SN|Theme",
   "area": "themes",
   "version": "1.0.0",
-  "url": "https://antivento.github.io/standard-notes-rose-pine-theme/theme.css",
+  "url": "https://raw.githubusercontent.com/antivento/standard-notes-rose-pine-theme/main/theme.css",
+  "latest_url": "https://raw.githubusercontent.com/antivento/standard-notes-rose-pine-theme/main/install.json",
   "download_url": "https://github.com/antivento/standard-notes-rose-pine-theme/archive/refs/heads/main.zip"
 }
