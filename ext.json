@@ -3,7 +3,9 @@
   "name": "Rosé Pine Moon",
   "content_type": "SN|Theme",
   "area": "themes",
-  "version": "2.0.0",
-  "description": "Rosé Pine Moon Theme",
-  "url": "https://cdn.jsdelivr.net/gh/antivento/standard-notes-rose-pine-theme@main/theme.css"
+  "version": "2.0.1",
+  "description": "Rosé Pine Moon theme with Inter font",
+  "url": "https://cdn.jsdelivr.net/gh/antivento/standard-notes-rose-pine-theme@main/theme.css?v=2",
+  "download_url": "https://github.com/antivento/standard-notes-rose-pine-theme/archive/refs/heads/main.zip",
+  "latest_url": "https://cdn.jsdelivr.net/gh/antivento/standard-notes-rose-pine-theme@main/ext.json"
 }
