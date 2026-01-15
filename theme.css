@@ -1,82 +1,93 @@
 :root {
-  /* === COLORI BASE === */
-  --sn-stylekit-base: #232136;
-  --sn-stylekit-foreground: #e0def4;
-  --sn-stylekit-background-color: #232136;
-  --sn-stylekit-border-color: #44415a;
-  
-  /* === TESTO === */
-  --sn-stylekit-paragraph-text-color: #e0def4;
-  --sn-stylekit-secondary-foreground-color: #908caa;
-  --sn-stylekit-secondary-background-color: #2a273f;
-  
-  /* === CONTRASTO (sidebar, panel) === */
-  --sn-stylekit-contrast-background-color: #2a273f;
-  --sn-stylekit-contrast-foreground-color: #e0def4;
-  --sn-stylekit-contrast-border-color: #56526e;
-  --sn-stylekit-contrast-secondary-background-color: #393552;
-  
-  /* === EDITOR === */
-  --sn-stylekit-editor-background-color: #232136;
-  --sn-stylekit-editor-foreground-color: #e0def4;
-  
-  /* === INPUT FIELDS === */
-  --sn-stylekit-input-background-color: #2a273f;
-  --sn-stylekit-input-foreground-color: #e0def4;
-  --sn-stylekit-input-border-color: #44415a;
-  --sn-stylekit-input-placeholder-color: #6e6a86;
-  
-  /* === STATI (hover, focus, active) === */
-  --sn-stylekit-info-color: #9ccfd8;
-  --sn-stylekit-neutral-color: #908caa;
-  --sn-stylekit-success-color: #c4a7e7;
-  --sn-stylekit-warning-color: #f6c177;
-  --sn-stylekit-danger-color: #eb6f92;
-  
-  /* === OVERLAY (modale, dropdown) === */
-  --sn-stylekit-shadow-color: rgba(35, 33, 54, 0.7);
-  --sn-stylekit-backdrop-color: rgba(35, 33, 54, 0.8);
-  
-  /* === SCROLLBAR === */
-  --sn-stylekit-scrollbar-thumb-color: #44415a;
-  --sn-stylekit-scrollbar-track-color: #232136;
-  
-  /* === ELEMENTI ATTIVI === */
-  --sn-stylekit-info-contrast-color: #232136;
-  --sn-stylekit-selected-background-color: #393552;
-  --sn-stylekit-selected-foreground-color: #e0def4;
-  
-  /* === LINK === */
-  --sn-stylekit-accessory-tint-color-1: #c4a7e7;
-  --sn-stylekit-accessory-tint-color-2: #9ccfd8;
-  --sn-stylekit-accessory-tint-color-3: #f6c177;
-  
-  /* === SYNTAX HIGHLIGHTING (editor markdown) === */
-  --sn-stylekit-syntax-code-color: #ea9a97;
-  --sn-stylekit-syntax-link-color: #9ccfd8;
-  --sn-stylekit-syntax-quote-color: #908caa;
-  --sn-stylekit-syntax-tag-color: #c4a7e7;
+  /* --- ROSE PINE MOON PALETTE DEFINITION (For reference) --- */
+  --rp-base: #232136;
+  --rp-surface: #2a273f;
+  --rp-overlay: #393552;
+  --rp-muted: #6e6a86;
+  --rp-subtle: #908caa;
+  --rp-text: #e0def4;
+  --rp-love: #eb6f92;      /* Red */
+  --rp-gold: #f6c177;      /* Yellow/Orange */
+  --rp-rose: #ea9a97;      /* Pink/Accent */
+  --rp-pine: #3e8fb0;      /* Blue */
+  --rp-foam: #9ccfd8;      /* Cyan */
+  --rp-iris: #c4a7e7;      /* Purple */
+  --rp-highlight-low: #2a2837;
+  --rp-highlight-med: #44415a;
+
+  /* --- MAPPING TO YOUR PALETTE --- */
+
+  /* Base Colors */
+  --foreground-color: var(--rp-text);
+  --background-color: var(--rp-base);
+  --highlight-color: var(--rp-rose); /* Use Rose as main accent */
+  --border-color: var(--rp-overlay);
+
+  /* StyleKit Vars */
+  --sn-stylekit-shadow-color: var(--rp-highlight-low);
+
+  --sn-stylekit-info-color: var(--rp-pine);
+  --sn-stylekit-info-contrast-color: var(--rp-base);
+
+  --sn-stylekit-neutral-color: var(--rp-subtle);
+  --sn-stylekit-neutral-contrast-color: var(--rp-base);
+
+  --sn-stylekit-success-color: var(--rp-foam);
+  --sn-stylekit-success-contrast-color: var(--rp-base);
+
+  --sn-stylekit-warning-color: var(--rp-gold);
+  --sn-stylekit-warning-contrast-color: var(--rp-base);
+
+  --sn-stylekit-danger-color: var(--rp-love);
+  --sn-stylekit-danger-contrast-color: var(--rp-base);
+
+  /* Editor (Writing area) */
+  --sn-stylekit-editor-background-color: var(--rp-base);
+  --sn-stylekit-editor-foreground-color: var(--rp-text);
+
+  /* General Interface */
+  --sn-stylekit-background-color: var(--rp-base);
+  --sn-stylekit-foreground-color: var(--rp-text);
+  --sn-stylekit-border-color: var(--rp-overlay);
+
+  /* Contrast Areas (e.g. Sidebar, Menu) */
+  --sn-stylekit-contrast-background-color: var(--rp-surface);
+  --sn-stylekit-contrast-foreground-color: var(--rp-text);
+  --sn-stylekit-contrast-border-color: var(--rp-overlay);
+
+  /* Secondary Elements */
+  --sn-stylekit-secondary-background-color: var(--rp-base);
+  --sn-stylekit-secondary-foreground-color: var(--rp-subtle);
+  --sn-stylekit-secondary-border-color: var(--rp-overlay);
+
+  --sn-stylekit-secondary-contrast-background-color: var(--rp-surface);
+  --sn-stylekit-secondary-contrast-foreground-color: var(--rp-subtle);
+  --sn-stylekit-secondary-contrast-border-color: var(--rp-overlay);
+
+  --sn-stylekit-paragraph-text-color: var(--rp-text);
+
+  /* Scrollbars */
+  --sn-stylekit-scrollbar-track-border-color: var(--rp-overlay);
+  --sn-stylekit-scrollbar-thumb-color: var(--rp-highlight-med);
+
+  /* Desktop App Titlebar */
+  --sn-desktop-titlebar-bg-color: var(--rp-base);
+  --sn-desktop-titlebar-border-color: var(--rp-overlay);
+  --sn-desktop-titlebar-ui-color: var(--rp-subtle);
+  --sn-desktop-titlebar-ui-hover-color: var(--rp-rose);
+
+  /* Menu */
+  --sn-stylekit-menu-border: 1px solid var(--rp-overlay);
+
+  /* Passive Colors (Background gradients/shades) */
+  --sn-stylekit-passive-color-0: var(--rp-subtle);        /* Lighter */
+  --sn-stylekit-passive-color-3: var(--rp-overlay);       /* Medium */
+  --sn-stylekit-passive-color-4: var(--rp-surface);       /* Dark */
+  --sn-stylekit-passive-color-4-opacity-variant: var(--rp-highlight-low);
+  --sn-stylekit-passive-color-5: #1f1d2e;                 /* Darker than base */
 }
 
-/* === STILI AGGIUNTIVI === */
-
-/* Migliora leggibilità liste */
-.note-list-item {
-  border-bottom: 1px solid var(--sn-stylekit-border-color) !important;
-}
-
-.note-list-item.selected {
-  background-color: var(--sn-stylekit-selected-background-color) !important;
-}
-
-/* Editor spacing */
-.editor {
-  padding: 24px !important;
-  line-height: 1.6 !important;
-}
-
-/* Tag styling */
-.tag {
-  background-color: var(--sn-stylekit-contrast-secondary-background-color) !important;
-  border: 1px solid var(--sn-stylekit-border-color) !important;
+/* Mandatory fix to avoid white flashes */
+html, body, .app {
+    background-color: var(--rp-base) !important;
 }
