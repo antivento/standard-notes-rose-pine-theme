@@ -1,7 +1,11 @@
 {
-  "name": "standard-notes-rose-pine-theme",
+  "name": "rose-pine-moon",
   "version": "1.0.0",
   "sn": {
     "main": "theme.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antivento/standard-notes-rose-pine-theme"
   }
 }
