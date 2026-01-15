@@ -41,6 +41,7 @@
   /* Editor */
   --sn-stylekit-editor-background-color: var(--rp-base);
   --sn-stylekit-editor-foreground-color: var(--rp-text);
+  --sn-stylekit-secondary-background-color: var(--rp-overlay);
 
   /* General Interface */
   --sn-stylekit-background-color: var(--rp-base);
@@ -59,6 +60,9 @@
 
   /* 2. Official StyleKit Overrides (Backup) */
   --sn-stylekit-sidebar-background-color: var(--sidebar-bg-custom);
+
+  /* 3. Label Tag Bacgrkound */
+  .text-foreground {background-color: var(--rp-overlay);
   
   /* Selected Item */
   --sn-stylekit-sidebar-item-selected-background-color: var(--rp-highlight-med);
