@@ -1,10 +1,10 @@
 {
-  "identifier": "com.antivento.rose-pine-gunderson",
-  "name": "Rosé Pine Gunderson",
+  "identifier": "com.antivento.rose-pine-mymoon",
+  "name": "Rosé Pine My Moon",
   "content_type": "SN|Theme",
   "area": "themes",
   "version": "1.0.2",
-  "description": "Tema installato con metodo Gunderson",
+  "description": "Rosé Pine My Moon Theme",
   "url": "https://cdn.jsdelivr.net/gh/antivento/standard-notes-rose-pine-theme@v1.0.2/theme.css",
   "download_url": "https://github.com/antivento/standard-notes-rose-pine-theme/archive/refs/tags/v1.0.2.zip"
 }
