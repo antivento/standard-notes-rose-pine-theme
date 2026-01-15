@@ -68,6 +68,7 @@
   --sn-stylekit-sidebar-item-hover-background-color: var(--rp-overlay);
 
   /* 3. Internal Variables Overrides */
+  --navigation-section-title-color): var(--rp-subtle);
   --navigation-item-text-color: var(--rp-text);
   --navigation-item-selected-background-color: var(--rp-highlight-med);
   --navigation-item-hover-background-color: var(--rp-overlay);
