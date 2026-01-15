@@ -13,8 +13,9 @@
   --rp-foam: #9ccfd8;
   --rp-iris: #c4a7e7;
   --rp-highlight-low: #2a2837;
-  --rp-highlight-med: #44415a;  /* Darker selection */
-  --rp-highlight-high: #56526e; /* Current light selection */
+  --rp-highlight-med: #44415a;
+  --rp-highlight-high: #56526e;
+  --sidebar-bg-custom: #2A263E;
 
   /* --- MAPPING --- */
 
@@ -47,23 +48,26 @@
   --sn-stylekit-border-color: var(--rp-overlay);
 
   /* Sidebar & Menu Contrast Areas */
-  --sn-stylekit-contrast-background-color: var(--rp-surface);
+  --sn-stylekit-contrast-background-color: var(--sidebar-bg-custom);
   --sn-stylekit-contrast-foreground-color: var(--rp-text);
   --sn-stylekit-contrast-border-color: var(--rp-overlay);
 
-  /* --- SIDEBAR SPECIFIC FIXES (Your Request) --- */
+  /* --- SIDEBAR SPECIFIC FIXES --- */
   
-  /* 1. Official StyleKit Overrides */
-  --sn-stylekit-sidebar-background-color: var(--rp-surface);
+  /* 1. The specific class you found for the column background */
+  --navigation-column-background-color: var(--sidebar-bg-custom);
+
+  /* 2. Official StyleKit Overrides (Backup) */
+  --sn-stylekit-sidebar-background-color: var(--sidebar-bg-custom);
   
-  /* Selected Item: Uses highlight-med (#44415a) instead of high (#56526e) */
+  /* Selected Item */
   --sn-stylekit-sidebar-item-selected-background-color: var(--rp-highlight-med);
   --sn-stylekit-sidebar-item-selected-foreground-color: var(--rp-text);
   
-  /* Hover Item: Uses overlay (#393552) for a subtle effect */
+  /* Hover Item */
   --sn-stylekit-sidebar-item-hover-background-color: var(--rp-overlay);
 
-  /* 2. Internal Variables Overrides (The ones you found) */
+  /* 3. Internal Variables Overrides */
   --navigation-item-text-color: var(--rp-text);
   --navigation-item-selected-background-color: var(--rp-highlight-med);
   --navigation-item-hover-background-color: var(--rp-overlay);
@@ -84,7 +88,7 @@
   /* Passive Colors */
   --sn-stylekit-passive-color-0: var(--rp-subtle);
   --sn-stylekit-passive-color-3: var(--rp-overlay);
-  --sn-stylekit-passive-color-4: var(--rp-surface);
+  --sn-stylekit-passive-color-4: var(--sidebar-bg-custom);
   --sn-stylekit-passive-color-4-opacity-variant: var(--rp-highlight-low);
   --sn-stylekit-passive-color-5: #1f1d2e;
 }
@@ -94,7 +98,7 @@ html, body, .app {
     background-color: var(--rp-base) !important;
 }
 
-/* --- YOUR CUSTOM FIXES --- */
+/* --- CUSTOM CSS FIXES --- */
 
 /* Fix spacing in Lexical Editor paragraphs */
 .Lexical__paragraph {
