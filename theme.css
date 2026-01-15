@@ -1,47 +1,43 @@
 :root {
-  /* --- ROSE PINE MOON PALETTE DEFINITION (For reference) --- */
+  /* --- ROSE PINE MOON PALETTE DEFINITION --- */
   --rp-base: #232136;
   --rp-surface: #2a273f;
   --rp-overlay: #393552;
   --rp-muted: #6e6a86;
   --rp-subtle: #908caa;
   --rp-text: #e0def4;
-  --rp-love: #eb6f92;      /* Red */
-  --rp-gold: #f6c177;      /* Yellow/Orange */
-  --rp-rose: #ea9a97;      /* Pink/Accent */
-  --rp-pine: #3e8fb0;      /* Blue */
-  --rp-foam: #9ccfd8;      /* Cyan */
-  --rp-iris: #c4a7e7;      /* Purple */
+  --rp-love: #eb6f92;
+  --rp-gold: #f6c177;
+  --rp-rose: #ea9a97;
+  --rp-pine: #3e8fb0;
+  --rp-foam: #9ccfd8;
+  --rp-iris: #c4a7e7;
   --rp-highlight-low: #2a2837;
-  --rp-highlight-med: #44415a;
+  --rp-highlight-med: #44415a;  /* Darker selection */
+  --rp-highlight-high: #56526e; /* Current light selection */
 
-  /* --- MAPPING TO YOUR PALETTE --- */
+  /* --- MAPPING --- */
 
   /* Base Colors */
   --foreground-color: var(--rp-text);
   --background-color: var(--rp-base);
-  --highlight-color: var(--rp-rose); /* Use Rose as main accent */
+  --highlight-color: var(--rp-rose);
   --border-color: var(--rp-overlay);
 
   /* StyleKit Vars */
   --sn-stylekit-shadow-color: var(--rp-highlight-low);
-
   --sn-stylekit-info-color: var(--rp-pine);
   --sn-stylekit-info-contrast-color: var(--rp-base);
-
   --sn-stylekit-neutral-color: var(--rp-subtle);
   --sn-stylekit-neutral-contrast-color: var(--rp-base);
-
   --sn-stylekit-success-color: var(--rp-foam);
   --sn-stylekit-success-contrast-color: var(--rp-base);
-
   --sn-stylekit-warning-color: var(--rp-gold);
   --sn-stylekit-warning-contrast-color: var(--rp-base);
-
   --sn-stylekit-danger-color: var(--rp-love);
   --sn-stylekit-danger-contrast-color: var(--rp-base);
 
-  /* Editor (Writing area) */
+  /* Editor */
   --sn-stylekit-editor-background-color: var(--rp-base);
   --sn-stylekit-editor-foreground-color: var(--rp-text);
 
@@ -50,21 +46,27 @@
   --sn-stylekit-foreground-color: var(--rp-text);
   --sn-stylekit-border-color: var(--rp-overlay);
 
-  /* Contrast Areas (e.g. Sidebar, Menu) */
+  /* Sidebar & Menu Contrast Areas */
   --sn-stylekit-contrast-background-color: var(--rp-surface);
   --sn-stylekit-contrast-foreground-color: var(--rp-text);
   --sn-stylekit-contrast-border-color: var(--rp-overlay);
 
-  /* Secondary Elements */
-  --sn-stylekit-secondary-background-color: var(--rp-base);
-  --sn-stylekit-secondary-foreground-color: var(--rp-subtle);
-  --sn-stylekit-secondary-border-color: var(--rp-overlay);
+  /* --- SIDEBAR SPECIFIC FIXES (Your Request) --- */
+  
+  /* 1. Official StyleKit Overrides */
+  --sn-stylekit-sidebar-background-color: var(--rp-surface);
+  
+  /* Selected Item: Uses highlight-med (#44415a) instead of high (#56526e) */
+  --sn-stylekit-sidebar-item-selected-background-color: var(--rp-highlight-med);
+  --sn-stylekit-sidebar-item-selected-foreground-color: var(--rp-text);
+  
+  /* Hover Item: Uses overlay (#393552) for a subtle effect */
+  --sn-stylekit-sidebar-item-hover-background-color: var(--rp-overlay);
 
-  --sn-stylekit-secondary-contrast-background-color: var(--rp-surface);
-  --sn-stylekit-secondary-contrast-foreground-color: var(--rp-subtle);
-  --sn-stylekit-secondary-contrast-border-color: var(--rp-overlay);
-
-  --sn-stylekit-paragraph-text-color: var(--rp-text);
+  /* 2. Internal Variables Overrides (The ones you found) */
+  --navigation-item-text-color: var(--rp-text);
+  --navigation-item-selected-background-color: var(--rp-highlight-med);
+  --navigation-item-hover-background-color: var(--rp-overlay);
 
   /* Scrollbars */
   --sn-stylekit-scrollbar-track-border-color: var(--rp-overlay);
@@ -79,15 +81,23 @@
   /* Menu */
   --sn-stylekit-menu-border: 1px solid var(--rp-overlay);
 
-  /* Passive Colors (Background gradients/shades) */
-  --sn-stylekit-passive-color-0: var(--rp-subtle);        /* Lighter */
-  --sn-stylekit-passive-color-3: var(--rp-overlay);       /* Medium */
-  --sn-stylekit-passive-color-4: var(--rp-surface);       /* Dark */
+  /* Passive Colors */
+  --sn-stylekit-passive-color-0: var(--rp-subtle);
+  --sn-stylekit-passive-color-3: var(--rp-overlay);
+  --sn-stylekit-passive-color-4: var(--rp-surface);
   --sn-stylekit-passive-color-4-opacity-variant: var(--rp-highlight-low);
-  --sn-stylekit-passive-color-5: #1f1d2e;                 /* Darker than base */
+  --sn-stylekit-passive-color-5: #1f1d2e;
 }
 
 /* Mandatory fix to avoid white flashes */
 html, body, .app {
     background-color: var(--rp-base) !important;
+}
+
+/* --- YOUR CUSTOM FIXES --- */
+
+/* Fix spacing in Lexical Editor paragraphs */
+.Lexical__paragraph {
+    padding-bottom: .55em;
+    line-height: 1.45;
 }
